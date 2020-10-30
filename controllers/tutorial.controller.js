@@ -54,9 +54,9 @@ exports.delete = (req, res) => {
         })
         .then(num => {
             if (num == 1)
-                res.json('Updated successfully')
+                res.json('Deleted successfully')
             else
-                res.json('Cannot update')
+                res.json('Cannot delete')
         })
         .catch(err => {
             res.json(err)
